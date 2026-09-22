@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+@theme {
+  /* Base: mesa de impressão + tinta */
+  --color-plate: #f2f3f6;
+  --color-plate-2: #e4e7ee;
+  --color-ink: #171c33;
+  --color-ink-2: #4a5070;
+  --color-bed: #232a47;
+
+  /* Filamentos (cada segmento tem uma cor) */
+  --color-cobalt: #2f4bff;
+  --color-magenta: #e8407a;
+  --color-teal: #0e9e9a;
+  --color-amber: #e0901a;
+  --color-violet: #7c5cff;
+
+  --font-display: var(--font-anybody), system-ui, sans-serif;
+  --font-sans: var(--font-instrument), system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  background: var(--color-plate);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Display largo: lembra o traço "extrudado" da impressão */
+.display {
+  font-family: var(--font-display);
+  font-stretch: 125%;
+  letter-spacing: -0.025em;
+}
+
+/* Textura de mesa de impressão */
+.plate-grid {
+  background-image: radial-gradient(circle at 1px 1px, rgb(23 28 51 / 0.1) 1px, transparent 0);
+  background-size: 22px 22px;
+}
+.plate-grid-dark {
+  background-image: radial-gradient(circle at 1px 1px, rgb(255 255 255 / 0.07) 1px, transparent 0);
+  background-size: 22px 22px;
+}
+
+/* Bico varrendo a camada */
+@keyframes sweep {
+  from { transform: translateX(0); }
+  to { transform: translateX(180px); }
+}
+.nozzle-sweep { animation: sweep 0.42s ease-in-out infinite alternate; }
+
+/* Entrada do hero, uma única vez */
+@keyframes rise {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: none; }
+}
+.rise { animation: rise 0.8s cubic-bezier(0.2, 0.7, 0.2, 1) both; }
+.rise-2 { animation-delay: 0.12s; }
+.rise-3 { animation-delay: 0.24s; }
+
+@keyframes marquee { to { transform: translateX(-50%); } }
+.marquee { animation: marquee 45s linear infinite; }
+.marquee-wrap:hover .marquee { animation-play-state: paused; }
+
+:focus-visible {
+  outline: 2px solid var(--color-cobalt);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+.on-dark :focus-visible { outline-color: #ffd166; }
+
+details > summary { list-style: none; }
+details > summary::-webkit-details-marker { display: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
