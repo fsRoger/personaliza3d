@@ -17,7 +17,7 @@ export default function Logo({ dark = false }: { dark?: boolean }) {
         className={`display text-lg font-bold tracking-tight ${dark ? "text-white" : "text-ink"}`}
         style={{ fontStretch: "115%" }}
       >
-        personaliza3d
+        tomaforma3d
       </span>
     </span>
   );

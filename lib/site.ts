@@ -1,15 +1,22 @@
 export const site = {
-  name: "Personaliza3D",
+  name: "TomaForma3D",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://personaliza3d.vercel.app",
   // Troque pelos dados reais
-  whatsapp: "5511999999999",
-  email: "contato@personaliza3d.com.br",
-  instagram: "https://instagram.com/personaliza3d",
+  whatsapp: "5511933370546",
+  email: "tomaformalab@gmail.com",
+  instagram: "https://instagram.com/TomaForma.3d",
   city: "Barueri",
   state: "SP",
-  areaServed: ["Barueri", "Alphaville", "Santana de Parnaíba", "Carapicuíba", "Osasco", "São Paulo"],
+  areaServed: [
+    "Barueri",
+    "Alphaville",
+    "Santana de Parnaíba",
+    "Carapicuíba",
+    "Osasco",
+    "São Paulo",
+  ],
   founder: {
-    name: "Roger",
+    name: "Roger Coutinho",
     role: "Desenvolvedor full-stack e fundador",
     // Use a URL de produção do portfólio (o link de preview da Vercel pede login)
     portfolio: "https://portifoliorfs-nz0s33343-keykronos-projects.vercel.app/",

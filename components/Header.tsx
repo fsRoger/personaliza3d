@@ -18,7 +18,7 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-ink/10 bg-plate/85 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5">
-        <Link href="/" aria-label="Personaliza3D, página inicial">
+        <Link href="/" aria-label="TomaForma3D, página inicial">
           <Logo />
         </Link>
 

@@ -20,8 +20,8 @@ const instrument = Instrument_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: "Impressão 3D em Barueri e Alphaville | Personaliza3D",
-    template: "%s | Personaliza3D",
+    default: "Impressão 3D em Barueri e Alphaville | TomaForma3D",
+    template: "%s | TomaForma3D",
   },
   description: site.description,
   keywords: [

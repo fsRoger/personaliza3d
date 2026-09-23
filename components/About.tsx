@@ -6,17 +6,18 @@ export default function About() {
     <section id="sobre" className="bg-white py-24">
       <div className="mx-auto grid max-w-6xl gap-12 px-5 md:grid-cols-[1fr_1.2fr] md:items-center">
         <ImageSlot
-          alt="Oficina da Personaliza3D com impressora 3D e peças prontas"
+          src="/images/sobre.jpg"
+          alt="Oficina da TomaForma3D com impressora 3D e peças prontas"
           label="Oficina e equipe"
           color="#2f4bff"
           className="aspect-[4/5] rounded-[28px]"
         />
         <div>
           <h2 className="display text-[clamp(2rem,4vw,3.2rem)] font-extrabold leading-[1.02]">
-            Quem faz a Personaliza3D
+            Quem faz a TomaForma3D
           </h2>
           <p className="mt-6 text-lg leading-relaxed text-ink-2">
-            A Personaliza3D nasceu em Barueri para ocupar o espaço entre o hobby e a indústria: negócios que precisam de
+            A TomaForma3D nasceu em Barueri para ocupar o espaço entre o hobby e a indústria: negócios que precisam de
             uma peça certa, rápido, sem comprar máquina nem encomendar molde.
           </p>
 

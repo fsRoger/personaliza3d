@@ -1,4 +1,4 @@
-# Personaliza3D
+# TomaForma3D
 
 Site institucional em Next.js 15 (App Router) + Tailwind v4 + Motion. Sem shadcn.
 
